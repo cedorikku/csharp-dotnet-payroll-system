@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "payroll-system", "payroll-system\payroll-system.csproj", "{3010A7AE-E434-49D8-9C98-DE0CFEB69C7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHelper", "DataHelper\DataHelper.csproj", "{FD719E5F-1876-4BB1-9C72-3C0FAD038B0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3010A7AE-E434-49D8-9C98-DE0CFEB69C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3010A7AE-E434-49D8-9C98-DE0CFEB69C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3010A7AE-E434-49D8-9C98-DE0CFEB69C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD719E5F-1876-4BB1-9C72-3C0FAD038B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD719E5F-1876-4BB1-9C72-3C0FAD038B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD719E5F-1876-4BB1-9C72-3C0FAD038B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD719E5F-1876-4BB1-9C72-3C0FAD038B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
