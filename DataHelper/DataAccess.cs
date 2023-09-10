@@ -18,6 +18,33 @@ namespace DataHelper
         public double Deduction { get => deduction; set => deduction = value; }
         public double NetPay { get => netPay; set => netPay = value; }
 
+        private void permanentEmp(int days)
+        {
+            double ratePerDay = 850;
+            double sss = 500;
+            double medicare = 350;
+            double taxRate = 0.25;
+
+        }
+
+        private void probationaryEmp(int days)
+        {
+            double ratePerDay = 550;
+            double sss = 400;
+            double medicare = 250;
+            double taxRate = 0.15;
+
+        }
+
+        private void contractualEmp(int days)
+        {
+            double ratePerDay = 350;
+            double sss = 100;
+            double medicare = 100;
+            double taxRate = 0.1;
+
+        }
+
         private double computeGrossPay(int days, double rate)
         {
             return days * rate;
