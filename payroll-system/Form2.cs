@@ -27,11 +27,27 @@ namespace payroll_system
             // Welcome message
             lblHeading.Text = "Hello, " + firstname + " " + lastname;
 
+            LoadListItems();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void LoadListItems()
+        {
+            var statusList = new List<string>()
+            {
+                "Permanent",
+                "Probationary",
+                "Contractual"
+            };
+
+            foreach (var item in statusList)
+            {
+                cmbEmployeeStatus.Items.Add(item);
+            }
         }
     }
 }
