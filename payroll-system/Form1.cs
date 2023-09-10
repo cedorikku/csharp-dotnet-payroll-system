@@ -17,12 +17,15 @@ namespace payroll_system
             InitializeComponent();
             txtFirstName.Text = "First Name";
             txtLastName.Text = "Last Name";
+            txtFirstName.ForeColor = Color.Gray;
+            txtLastName.ForeColor = Color.Gray;
         }
 
         private void txtFirstName_Enter(object sender, EventArgs e)
         {
             if (txtFirstName.Text == "First Name")
             {
+                txtFirstName.ForeColor = Color.Black;
                 txtFirstName.Text = "";
             }
         }
@@ -31,6 +34,7 @@ namespace payroll_system
         {
             if (String.IsNullOrEmpty(txtFirstName.Text))
             {
+                txtFirstName.ForeColor = Color.Gray;
                 txtFirstName.Text = "First Name";
             }
         }
@@ -39,6 +43,7 @@ namespace payroll_system
         {
             if (txtLastName.Text == "Last Name")
             {
+                txtLastName.ForeColor = Color.Black;
                 txtLastName.Text = "";
             }
         }
@@ -47,6 +52,7 @@ namespace payroll_system
         {
             if (String.IsNullOrEmpty(txtLastName.Text))
             {
+                txtLastName.ForeColor = Color.Gray;
                 txtLastName.Text = "Last Name";
             }
         }
