@@ -77,6 +77,9 @@ namespace payroll_system
                 return;
             }
 
+            this.Hide();
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }

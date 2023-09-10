@@ -21,5 +21,10 @@ namespace payroll_system
         {
 
         }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
