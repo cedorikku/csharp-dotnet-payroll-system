@@ -15,6 +15,10 @@ namespace payroll_system
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
             txtFirstName.Text = "First Name";
             txtLastName.Text = "Last Name";
             txtFirstName.ForeColor = Color.Gray;
