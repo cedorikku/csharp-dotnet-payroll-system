@@ -50,5 +50,23 @@ namespace payroll_system
                 txtLastName.Text = "Last Name";
             }
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (txtFirstName.Text == "First Name")
+            {
+                MessageBox.Show("Please fill-in your first name", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtFirstName.Focus();
+                return;
+            }
+
+            if (txtLastName.Text == "Last Name")
+            {
+                txtLastName.Focus();
+                MessageBox.Show("Please fill-in your last name", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+        }
     }
 }

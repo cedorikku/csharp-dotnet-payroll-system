@@ -103,7 +103,7 @@
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.Black;
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F);
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.Control;
             this.btnSubmit.Location = new System.Drawing.Point(68, 231);
             this.btnSubmit.Name = "btnSubmit";
@@ -111,6 +111,7 @@
             this.btnSubmit.TabIndex = 3;
             this.btnSubmit.Text = "Get Started";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label1
             // 
