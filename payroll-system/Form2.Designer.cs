@@ -40,7 +40,7 @@
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Payroll System";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
