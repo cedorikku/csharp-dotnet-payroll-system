@@ -28,31 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHeading = new System.Windows.Forms.Label();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbEmployeeStatus = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblFullName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblHeading
+            // lblMessage
             // 
-            this.lblHeading.AutoSize = true;
-            this.lblHeading.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblHeading.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeading.Location = new System.Drawing.Point(0, 0);
-            this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Padding = new System.Windows.Forms.Padding(50, 20, 0, 0);
-            this.lblHeading.Size = new System.Drawing.Size(304, 57);
-            this.lblHeading.TabIndex = 0;
-            this.lblHeading.Text = "Welcome message";
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(0, 0);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Padding = new System.Windows.Forms.Padding(50, 20, 0, 0);
+            this.lblMessage.Size = new System.Drawing.Size(121, 41);
+            this.lblMessage.TabIndex = 0;
+            this.lblMessage.Text = "Message";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.cmbEmployeeStatus);
-            this.panel1.Location = new System.Drawing.Point(59, 118);
+            this.panel1.Location = new System.Drawing.Point(55, 106);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
             this.panel1.Size = new System.Drawing.Size(227, 41);
@@ -74,20 +75,31 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(62, 107);
+            this.label1.Location = new System.Drawing.Point(58, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Status";
             // 
+            // lblFullName
+            // 
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(48, 35);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(205, 37);
+            this.lblFullName.TabIndex = 4;
+            this.lblFullName.Text = "Full name here";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 381);
+            this.ClientSize = new System.Drawing.Size(685, 361);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblHeading);
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.lblFullName);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
@@ -104,9 +116,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblHeading;
+        private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbEmployeeStatus;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFullName;
     }
 }
