@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnCompute = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -95,6 +96,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnCompute);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,6 +106,19 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Details";
+            // 
+            // btnCompute
+            // 
+            this.btnCompute.BackColor = System.Drawing.Color.Black;
+            this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCompute.ForeColor = System.Drawing.Color.White;
+            this.btnCompute.Location = new System.Drawing.Point(26, 136);
+            this.btnCompute.Name = "btnCompute";
+            this.btnCompute.Size = new System.Drawing.Size(227, 43);
+            this.btnCompute.TabIndex = 6;
+            this.btnCompute.Text = "Compute";
+            this.btnCompute.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -137,5 +152,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnCompute;
     }
 }
