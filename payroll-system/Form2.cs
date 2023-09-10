@@ -24,6 +24,8 @@ namespace payroll_system
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // Welcome message
+            lblHeading.Text = "Hello, " + firstname + " " + lastname;
 
         }
 
