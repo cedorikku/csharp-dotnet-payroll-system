@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataHelper;
 
 namespace payroll_system
 {
@@ -77,8 +78,12 @@ namespace payroll_system
                 return;
             }
 
+            UserInformation userInformation = new UserInformation();
+            userInformation.Firstname = txtFirstName.Text;
+            userInformation.Lastname = txtLastName.Text;
+
             this.Hide();
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(userInformation);
             form2.Show();
         }
     }

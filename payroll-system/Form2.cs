@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataHelper;
 
 namespace payroll_system
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string firstname, lastname;
+
+        public Form2(UserInformation userInfo)
         {
             InitializeComponent();
+            this.firstname = userInfo.Firstname; 
+            this.lastname = userInfo.Lastname;
         }
 
         private void Form2_Load(object sender, EventArgs e)
