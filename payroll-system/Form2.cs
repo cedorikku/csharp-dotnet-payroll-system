@@ -29,6 +29,7 @@ namespace payroll_system
             lblFullName.Text = firstname + " " + lastname;
 
             LoadListItems();
+            LoadDefaultValues();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -60,5 +61,13 @@ namespace payroll_system
                 cmbEmployeeStatus.Items.Add(item);
             }
         }
+
+        private void LoadDefaultValues()
+        {
+            txtGrossPay.Text = "0.00";
+            txtDeduction.Text = "0.00";
+            txtNetPay.Text = "0.00";
+        }
+
     }
 }
