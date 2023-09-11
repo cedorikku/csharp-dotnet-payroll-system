@@ -82,7 +82,7 @@
             this.panel1.Location = new System.Drawing.Point(26, 37);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
-            this.panel1.Size = new System.Drawing.Size(227, 41);
+            this.panel1.Size = new System.Drawing.Size(286, 41);
             this.panel1.TabIndex = 2;
             // 
             // cmbEmployeeStatus
@@ -94,7 +94,7 @@
             this.cmbEmployeeStatus.FormattingEnabled = true;
             this.cmbEmployeeStatus.Location = new System.Drawing.Point(5, 5);
             this.cmbEmployeeStatus.Name = "cmbEmployeeStatus";
-            this.cmbEmployeeStatus.Size = new System.Drawing.Size(215, 29);
+            this.cmbEmployeeStatus.Size = new System.Drawing.Size(274, 29);
             this.cmbEmployeeStatus.TabIndex = 0;
             // 
             // label1
