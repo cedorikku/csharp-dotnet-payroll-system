@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblMessage = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbEmployeeStatus = new System.Windows.Forms.ComboBox();
@@ -54,7 +55,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblPeso1 = new System.Windows.Forms.Label();
             this.txtGrossPay = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblExcludeDays = new System.Windows.Forms.Label();
+            this.tipDaysExcluded = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -193,7 +195,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.chkWeekdays);
-            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.lblExcludeDays);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.dteStart);
             this.groupBox2.Controls.Add(this.dteEnd);
@@ -384,15 +386,21 @@
             this.txtGrossPay.TabStop = false;
             this.txtGrossPay.Text = "0.00";
             // 
-            // label5
+            // lblExcludeDays
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 167);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Days to exclude:";
+            this.lblExcludeDays.AutoSize = true;
+            this.lblExcludeDays.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExcludeDays.Location = new System.Drawing.Point(27, 167);
+            this.lblExcludeDays.Name = "lblExcludeDays";
+            this.lblExcludeDays.Size = new System.Drawing.Size(107, 17);
+            this.lblExcludeDays.TabIndex = 3;
+            this.lblExcludeDays.Text = "Days to exclude:";
+            this.tipDaysExcluded.SetToolTip(this.lblExcludeDays, "Sunday is already excluded");
+            // 
+            // tipDaysExcluded
+            // 
+            this.tipDaysExcluded.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.tipDaysExcluded.ToolTipTitle = "Excluding Dates";
             // 
             // Form2
             // 
@@ -459,6 +467,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNetPay;
         private System.Windows.Forms.CheckedListBox chkWeekdays;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblExcludeDays;
+        private System.Windows.Forms.ToolTip tipDaysExcluded;
     }
 }
