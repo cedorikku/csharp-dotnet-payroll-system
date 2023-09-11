@@ -149,7 +149,7 @@
             this.dteStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteStart.Location = new System.Drawing.Point(24, 57);
             this.dteStart.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
-            this.dteStart.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
+            this.dteStart.MinDate = new System.DateTime(2022, 1, 20, 0, 0, 0, 0);
             this.dteStart.Name = "dteStart";
             this.dteStart.Size = new System.Drawing.Size(288, 29);
             this.dteStart.TabIndex = 1;
