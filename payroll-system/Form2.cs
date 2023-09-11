@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,6 +90,16 @@ namespace payroll_system
             dteStart.Value = DateTime.Now;
             dteEnd.Value = dteStart.Value.AddDays(1);
             dteEnd.MinDate = dteStart.Value.AddDays(1);
+
+            var _weekdays = new ArrayList()
+            {
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+            };
+
+            foreach(var weekday in _weekdays)
+            {
+                chkWeekdays.Items.Add(weekday);
+            }
 
             // for the payroll summary
             txtGrossPay.Text = "0.00";

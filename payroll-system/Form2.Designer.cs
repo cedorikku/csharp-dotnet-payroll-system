@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkWeekdays = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblNetPay = new System.Windows.Forms.Label();
             this.lblDeduction = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblPeso1 = new System.Windows.Forms.Label();
             this.txtGrossPay = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -135,7 +137,7 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.White;
-            this.btnCompute.Location = new System.Drawing.Point(55, 416);
+            this.btnCompute.Location = new System.Drawing.Point(55, 499);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(692, 43);
             this.btnCompute.TabIndex = 6;
@@ -174,9 +176,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 17);
+            this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Start";
+            this.label2.Text = "Start:";
             // 
             // label3
             // 
@@ -184,13 +186,14 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(27, 100);
             this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label3.Size = new System.Drawing.Size(31, 17);
+            this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "End";
+            this.label3.Text = "End:";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.chkWeekdays);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.dteStart);
             this.groupBox2.Controls.Add(this.dteEnd);
@@ -198,10 +201,22 @@
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(55, 215);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(347, 176);
+            this.groupBox2.Size = new System.Drawing.Size(347, 267);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Days Worked";
+            // 
+            // chkWeekdays
+            // 
+            this.chkWeekdays.BackColor = System.Drawing.SystemColors.Control;
+            this.chkWeekdays.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chkWeekdays.FormattingEnabled = true;
+            this.chkWeekdays.HorizontalScrollbar = true;
+            this.chkWeekdays.Location = new System.Drawing.Point(24, 189);
+            this.chkWeekdays.MultiColumn = true;
+            this.chkWeekdays.Name = "chkWeekdays";
+            this.chkWeekdays.Size = new System.Drawing.Size(288, 60);
+            this.chkWeekdays.TabIndex = 7;
             // 
             // groupBox3
             // 
@@ -366,11 +381,21 @@
             this.txtGrossPay.TabStop = false;
             this.txtGrossPay.Text = "0.00";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(27, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Days to exclude:";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 483);
+            this.ClientSize = new System.Drawing.Size(794, 561);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -430,5 +455,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNetPay;
+        private System.Windows.Forms.CheckedListBox chkWeekdays;
+        private System.Windows.Forms.Label label5;
     }
 }
