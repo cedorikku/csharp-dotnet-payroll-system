@@ -25,9 +25,7 @@ namespace payroll_system
         private void Form2_Load(object sender, EventArgs e)
         {
             // Welcome message
-            lblMessage.Text = "Welcome,";
-            lblFullName.Text = firstname + " " + lastname;
-
+            LoadWelcomeMessage();
             LoadListItems();
             LoadDefaultValues();
         }
@@ -45,6 +43,12 @@ namespace payroll_system
                 cmbEmployeeStatus.Focus();
                 return;
             }
+        }
+
+        private void LoadWelcomeMessage()
+        {
+            lblMessage.Text = "Welcome,";
+            lblFullName.Text = firstname + " " + lastname;
         }
 
         private void LoadListItems()
