@@ -47,6 +47,7 @@
             this.txtFirstName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(10, 10);
+            this.txtFirstName.MaxLength = 30;
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(319, 22);
             this.txtFirstName.TabIndex = 0;
@@ -81,6 +82,7 @@
             this.txtLastName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(10, 10);
+            this.txtLastName.MaxLength = 28;
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(319, 22);
             this.txtLastName.TabIndex = 0;
