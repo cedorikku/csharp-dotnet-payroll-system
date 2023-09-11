@@ -137,7 +137,7 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.White;
-            this.btnCompute.Location = new System.Drawing.Point(55, 499);
+            this.btnCompute.Location = new System.Drawing.Point(55, 515);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(692, 43);
             this.btnCompute.TabIndex = 6;
@@ -201,7 +201,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(55, 215);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(347, 267);
+            this.groupBox2.Size = new System.Drawing.Size(347, 278);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Days Worked";
@@ -212,7 +212,7 @@
             this.chkWeekdays.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.chkWeekdays.FormattingEnabled = true;
             this.chkWeekdays.HorizontalScrollbar = true;
-            this.chkWeekdays.Location = new System.Drawing.Point(24, 189);
+            this.chkWeekdays.Location = new System.Drawing.Point(24, 191);
             this.chkWeekdays.MultiColumn = true;
             this.chkWeekdays.Name = "chkWeekdays";
             this.chkWeekdays.Size = new System.Drawing.Size(288, 60);
@@ -388,7 +388,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 165);
+            this.label5.Location = new System.Drawing.Point(27, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 17);
             this.label5.TabIndex = 3;
@@ -398,7 +398,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 561);
+            this.ClientSize = new System.Drawing.Size(794, 570);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
