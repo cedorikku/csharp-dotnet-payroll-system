@@ -41,25 +41,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblGrossPay = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtGrossPay = new System.Windows.Forms.TextBox();
-            this.lblPeso1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lblPeso2 = new System.Windows.Forms.Label();
-            this.txtDeduction = new System.Windows.Forms.TextBox();
+            this.lblNetPay = new System.Windows.Forms.Label();
             this.lblDeduction = new System.Windows.Forms.Label();
+            this.lblGrossPay = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNetPay = new System.Windows.Forms.TextBox();
-            this.lblNetPay = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblPeso2 = new System.Windows.Forms.Label();
+            this.txtDeduction = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblPeso1 = new System.Windows.Forms.Label();
+            this.txtGrossPay = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -218,103 +218,35 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Payroll Summary";
             // 
-            // lblGrossPay
+            // lblNetPay
             // 
-            this.lblGrossPay.AutoSize = true;
-            this.lblGrossPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrossPay.Location = new System.Drawing.Point(29, 27);
-            this.lblGrossPay.Name = "lblGrossPay";
-            this.lblGrossPay.Size = new System.Drawing.Size(68, 17);
-            this.lblGrossPay.TabIndex = 3;
-            this.lblGrossPay.Text = "Gross Pay";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.lblPeso1);
-            this.panel2.Controls.Add(this.txtGrossPay);
-            this.panel2.Location = new System.Drawing.Point(27, 47);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 5);
-            this.panel2.Size = new System.Drawing.Size(247, 43);
-            this.panel2.TabIndex = 2;
-            // 
-            // txtGrossPay
-            // 
-            this.txtGrossPay.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtGrossPay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGrossPay.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtGrossPay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGrossPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGrossPay.Location = new System.Drawing.Point(10, 10);
-            this.txtGrossPay.MaxLength = 50;
-            this.txtGrossPay.Name = "txtGrossPay";
-            this.txtGrossPay.ReadOnly = true;
-            this.txtGrossPay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtGrossPay.Size = new System.Drawing.Size(223, 22);
-            this.txtGrossPay.TabIndex = 4;
-            this.txtGrossPay.TabStop = false;
-            this.txtGrossPay.Text = "0.00";
-            // 
-            // lblPeso1
-            // 
-            this.lblPeso1.AutoSize = true;
-            this.lblPeso1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso1.Location = new System.Drawing.Point(6, 8);
-            this.lblPeso1.Name = "lblPeso1";
-            this.lblPeso1.Size = new System.Drawing.Size(18, 20);
-            this.lblPeso1.TabIndex = 3;
-            this.lblPeso1.Text = "₱";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.lblPeso2);
-            this.panel3.Controls.Add(this.txtDeduction);
-            this.panel3.Location = new System.Drawing.Point(27, 122);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 5);
-            this.panel3.Size = new System.Drawing.Size(247, 43);
-            this.panel3.TabIndex = 2;
-            // 
-            // lblPeso2
-            // 
-            this.lblPeso2.AutoSize = true;
-            this.lblPeso2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso2.Location = new System.Drawing.Point(6, 8);
-            this.lblPeso2.Name = "lblPeso2";
-            this.lblPeso2.Size = new System.Drawing.Size(18, 20);
-            this.lblPeso2.TabIndex = 3;
-            this.lblPeso2.Text = "₱";
-            // 
-            // txtDeduction
-            // 
-            this.txtDeduction.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtDeduction.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDeduction.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDeduction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeduction.Location = new System.Drawing.Point(10, 10);
-            this.txtDeduction.MaxLength = 50;
-            this.txtDeduction.Name = "txtDeduction";
-            this.txtDeduction.ReadOnly = true;
-            this.txtDeduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDeduction.Size = new System.Drawing.Size(223, 22);
-            this.txtDeduction.TabIndex = 4;
-            this.txtDeduction.TabStop = false;
-            this.txtDeduction.Text = "0.00";
+            this.lblNetPay.AutoSize = true;
+            this.lblNetPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNetPay.Location = new System.Drawing.Point(29, 195);
+            this.lblNetPay.Name = "lblNetPay";
+            this.lblNetPay.Size = new System.Drawing.Size(56, 17);
+            this.lblNetPay.TabIndex = 3;
+            this.lblNetPay.Text = "Net Pay";
             // 
             // lblDeduction
             // 
             this.lblDeduction.AutoSize = true;
             this.lblDeduction.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeduction.Location = new System.Drawing.Point(29, 102);
+            this.lblDeduction.Location = new System.Drawing.Point(29, 116);
             this.lblDeduction.Name = "lblDeduction";
             this.lblDeduction.Size = new System.Drawing.Size(70, 17);
             this.lblDeduction.TabIndex = 3;
             this.lblDeduction.Text = "Deduction";
+            // 
+            // lblGrossPay
+            // 
+            this.lblGrossPay.AutoSize = true;
+            this.lblGrossPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrossPay.Location = new System.Drawing.Point(29, 41);
+            this.lblGrossPay.Name = "lblGrossPay";
+            this.lblGrossPay.Size = new System.Drawing.Size(68, 17);
+            this.lblGrossPay.TabIndex = 3;
+            this.lblGrossPay.Text = "Gross Pay";
             // 
             // panel4
             // 
@@ -322,7 +254,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.txtNetPay);
-            this.panel4.Location = new System.Drawing.Point(27, 201);
+            this.panel4.Location = new System.Drawing.Point(27, 215);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10, 10, 10, 5);
             this.panel4.Size = new System.Drawing.Size(247, 43);
@@ -355,15 +287,83 @@
             this.txtNetPay.TabStop = false;
             this.txtNetPay.Text = "0.00";
             // 
-            // lblNetPay
+            // panel3
             // 
-            this.lblNetPay.AutoSize = true;
-            this.lblNetPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNetPay.Location = new System.Drawing.Point(29, 181);
-            this.lblNetPay.Name = "lblNetPay";
-            this.lblNetPay.Size = new System.Drawing.Size(56, 17);
-            this.lblNetPay.TabIndex = 3;
-            this.lblNetPay.Text = "Net Pay";
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.lblPeso2);
+            this.panel3.Controls.Add(this.txtDeduction);
+            this.panel3.Location = new System.Drawing.Point(27, 136);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(10, 10, 10, 5);
+            this.panel3.Size = new System.Drawing.Size(247, 43);
+            this.panel3.TabIndex = 2;
+            // 
+            // lblPeso2
+            // 
+            this.lblPeso2.AutoSize = true;
+            this.lblPeso2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeso2.Location = new System.Drawing.Point(6, 8);
+            this.lblPeso2.Name = "lblPeso2";
+            this.lblPeso2.Size = new System.Drawing.Size(18, 20);
+            this.lblPeso2.TabIndex = 3;
+            this.lblPeso2.Text = "₱";
+            // 
+            // txtDeduction
+            // 
+            this.txtDeduction.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtDeduction.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDeduction.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDeduction.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeduction.Location = new System.Drawing.Point(10, 10);
+            this.txtDeduction.MaxLength = 50;
+            this.txtDeduction.Name = "txtDeduction";
+            this.txtDeduction.ReadOnly = true;
+            this.txtDeduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDeduction.Size = new System.Drawing.Size(223, 22);
+            this.txtDeduction.TabIndex = 4;
+            this.txtDeduction.TabStop = false;
+            this.txtDeduction.Text = "0.00";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.lblPeso1);
+            this.panel2.Controls.Add(this.txtGrossPay);
+            this.panel2.Location = new System.Drawing.Point(27, 61);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 10, 10, 5);
+            this.panel2.Size = new System.Drawing.Size(247, 43);
+            this.panel2.TabIndex = 2;
+            // 
+            // lblPeso1
+            // 
+            this.lblPeso1.AutoSize = true;
+            this.lblPeso1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPeso1.Location = new System.Drawing.Point(6, 8);
+            this.lblPeso1.Name = "lblPeso1";
+            this.lblPeso1.Size = new System.Drawing.Size(18, 20);
+            this.lblPeso1.TabIndex = 3;
+            this.lblPeso1.Text = "₱";
+            // 
+            // txtGrossPay
+            // 
+            this.txtGrossPay.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtGrossPay.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtGrossPay.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtGrossPay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtGrossPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrossPay.Location = new System.Drawing.Point(10, 10);
+            this.txtGrossPay.MaxLength = 50;
+            this.txtGrossPay.Name = "txtGrossPay";
+            this.txtGrossPay.ReadOnly = true;
+            this.txtGrossPay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtGrossPay.Size = new System.Drawing.Size(223, 22);
+            this.txtGrossPay.TabIndex = 4;
+            this.txtGrossPay.TabStop = false;
+            this.txtGrossPay.Text = "0.00";
             // 
             // Form2
             // 
@@ -391,12 +391,12 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
