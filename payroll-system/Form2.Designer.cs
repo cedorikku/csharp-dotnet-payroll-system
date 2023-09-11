@@ -154,13 +154,14 @@
             this.dteStart.Size = new System.Drawing.Size(288, 29);
             this.dteStart.TabIndex = 1;
             this.dteStart.Value = new System.DateTime(2023, 9, 11, 0, 0, 0, 0);
+            this.dteStart.ValueChanged += new System.EventHandler(this.dteStart_ValueChanged);
             // 
             // dteEnd
             // 
             this.dteEnd.Checked = false;
             this.dteEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dteEnd.Location = new System.Drawing.Point(24, 119);
-            this.dteEnd.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
+            this.dteEnd.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.dteEnd.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.dteEnd.Name = "dteEnd";
             this.dteEnd.Size = new System.Drawing.Size(288, 29);

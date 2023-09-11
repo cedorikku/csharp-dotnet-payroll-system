@@ -45,6 +45,23 @@ namespace payroll_system
             }
         }
 
+        private void dteStart_ValueChanged(object sender, EventArgs e)
+        {
+            // date1 = dteStart
+            // date2 = dteEnd
+            // checks to more than or equal 0 if date1 is later than or equal to date2
+            if (DateTime.Compare(dteStart.Value, dteEnd.Value) >= 0)
+            {
+                dteEnd.Value = dteStart.Value;
+                dteEnd.MinDate = dteStart.Value.AddDays(1);
+            }
+            // checks to less than 0 if date1 is earlier than date2
+            else if (DateTime.Compare(dteStart.Value, dteEnd.Value) < 0)
+            {
+                dteEnd.MinDate = dteStart.Value.AddDays(1);
+            }
+        }
+
         private void LoadWelcomeMessage()
         {
             lblMessage.Text = "Welcome,";
@@ -70,8 +87,8 @@ namespace payroll_system
         {
             // for the days worked controls
             dteStart.Value = DateTime.Now;
-            dteEnd.Value = dteStart.Value;
-            dteEnd.MinDate = dteStart.Value;
+            dteEnd.Value = dteStart.Value.AddDays(1);
+            dteEnd.MinDate = dteStart.Value.AddDays(1);
 
             // for the payroll summary
             txtGrossPay.Text = "0.00";
