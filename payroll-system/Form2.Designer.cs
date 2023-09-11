@@ -159,7 +159,7 @@
             // 
             this.dteEnd.Checked = false;
             this.dteEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dteEnd.Location = new System.Drawing.Point(24, 114);
+            this.dteEnd.Location = new System.Drawing.Point(24, 119);
             this.dteEnd.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
             this.dteEnd.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.dteEnd.Name = "dteEnd";
@@ -181,7 +181,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 95);
+            this.label3.Location = new System.Drawing.Point(27, 100);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(31, 17);
@@ -197,7 +197,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(55, 215);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(347, 169);
+            this.groupBox2.Size = new System.Drawing.Size(347, 176);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Days Worked";
@@ -213,7 +213,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(444, 93);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 291);
+            this.groupBox3.Size = new System.Drawing.Size(303, 298);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Payroll Summary";
