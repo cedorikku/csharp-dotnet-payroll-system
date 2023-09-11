@@ -68,6 +68,12 @@ namespace payroll_system
 
         private void LoadDefaultValues()
         {
+            // for the days worked controls
+            dteStart.Value = DateTime.Now;
+            dteEnd.Value = dteStart.Value;
+            dteEnd.MinDate = dteStart.Value;
+
+            // for the payroll summary
             txtGrossPay.Text = "0.00";
             txtDeduction.Text = "0.00";
             txtNetPay.Text = "0.00";
