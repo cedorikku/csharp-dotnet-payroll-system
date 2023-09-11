@@ -36,6 +36,16 @@ namespace payroll_system
             Environment.Exit(0);
         }
 
+        private void btnCompute_Click(object sender, EventArgs e)
+        {
+            if (cmbEmployeeStatus.SelectedIndex == -1)
+            {
+                MessageBox.Show("Employee status not found");
+                cmbEmployeeStatus.Focus();
+                return;
+            }
+        }
+
         private void LoadListItems()
         {
             var statusList = new List<string>()
