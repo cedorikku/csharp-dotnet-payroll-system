@@ -125,7 +125,7 @@
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(55, 93);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 101);
@@ -200,7 +200,7 @@
             this.groupBox2.Controls.Add(this.dteStart);
             this.groupBox2.Controls.Add(this.dteEnd);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(55, 215);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(347, 278);
@@ -212,6 +212,7 @@
             // 
             this.chkNonWorkDays.BackColor = System.Drawing.SystemColors.Control;
             this.chkNonWorkDays.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chkNonWorkDays.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.chkNonWorkDays.FormattingEnabled = true;
             this.chkNonWorkDays.HorizontalScrollbar = true;
             this.chkNonWorkDays.Location = new System.Drawing.Point(24, 191);
@@ -226,9 +227,9 @@
             this.lblExcludeDays.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExcludeDays.Location = new System.Drawing.Point(27, 167);
             this.lblExcludeDays.Name = "lblExcludeDays";
-            this.lblExcludeDays.Size = new System.Drawing.Size(107, 17);
+            this.lblExcludeDays.Size = new System.Drawing.Size(139, 17);
             this.lblExcludeDays.TabIndex = 3;
-            this.lblExcludeDays.Text = "Days to exclude:";
+            this.lblExcludeDays.Text = "Workdays to exclude:";
             this.tipDaysExcluded.SetToolTip(this.lblExcludeDays, "Sunday is already excluded");
             // 
             // groupBox3
@@ -239,7 +240,7 @@
             this.groupBox3.Controls.Add(this.panel4);
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.panel2);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(444, 93);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(303, 318);

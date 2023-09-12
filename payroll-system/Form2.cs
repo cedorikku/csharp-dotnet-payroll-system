@@ -40,19 +40,19 @@ namespace payroll_system
         {
             if (cmbEmployeeStatus.SelectedIndex == -1)
             {
-                MessageBox.Show("Employee status not found");
+                MessageBox.Show("Employee status not found", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cmbEmployeeStatus.Focus();
                 return;
             }
             if (chkNonWorkDays.CheckedItems.Count == 6)
             {
-                MessageBox.Show("Must not have all work days excluded");
+                MessageBox.Show("Must not have all work days excluded. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chkNonWorkDays.Focus();
                 return;
             }
             else if (chkNonWorkDays.CheckedItems.Count > 3)
             {
-                MessageBox.Show("Minimum of 3 work days required");
+                MessageBox.Show("Minimum of 3 work days required. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chkNonWorkDays.Focus();
                 return;
             }
