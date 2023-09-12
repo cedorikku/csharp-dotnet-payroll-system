@@ -44,6 +44,13 @@ namespace payroll_system
                 cmbEmployeeStatus.Focus();
                 return;
             }
+
+            int _difference = (dteEnd.Value - dteStart.Value).Days;
+            int _daysPerWeek = 6; // Sunday is excluded
+            foreach (var items in chkWeekdays.CheckedItems)
+            {
+                _daysPerWeek--;
+            }
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
