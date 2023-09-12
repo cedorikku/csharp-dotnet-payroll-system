@@ -57,6 +57,9 @@
             this.lblPeso1 = new System.Windows.Forms.Label();
             this.txtGrossPay = new System.Windows.Forms.TextBox();
             this.tipDaysExcluded = new System.Windows.Forms.ToolTip(this.components);
+            this.lblAccount = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -64,17 +67,18 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
             this.lblMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.Location = new System.Drawing.Point(0, 0);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Padding = new System.Windows.Forms.Padding(50, 20, 0, 0);
-            this.lblMessage.Size = new System.Drawing.Size(121, 41);
+            this.lblMessage.Size = new System.Drawing.Size(191, 60);
             this.lblMessage.TabIndex = 0;
             this.lblMessage.Text = "Message";
             // 
@@ -113,20 +117,23 @@
             // 
             // lblFullName
             // 
+            this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(48, 35);
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(562, 4);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(205, 37);
+            this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblFullName.Size = new System.Drawing.Size(127, 21);
             this.lblFullName.TabIndex = 4;
-            this.lblFullName.Text = "Full name here";
+            this.lblFullName.Text = "Full name here ";
+            this.lblFullName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(55, 93);
+            this.groupBox1.Location = new System.Drawing.Point(52, 139);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 101);
             this.groupBox1.TabIndex = 5;
@@ -139,7 +146,7 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.White;
-            this.btnCompute.Location = new System.Drawing.Point(55, 515);
+            this.btnCompute.Location = new System.Drawing.Point(52, 546);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(692, 43);
             this.btnCompute.TabIndex = 6;
@@ -151,7 +158,7 @@
             // 
             this.dteStart.Checked = false;
             this.dteStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dteStart.Location = new System.Drawing.Point(24, 57);
+            this.dteStart.Location = new System.Drawing.Point(24, 52);
             this.dteStart.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
             this.dteStart.MinDate = new System.DateTime(2022, 1, 20, 0, 0, 0, 0);
             this.dteStart.Name = "dteStart";
@@ -164,7 +171,7 @@
             // 
             this.dteEnd.Checked = false;
             this.dteEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dteEnd.Location = new System.Drawing.Point(24, 119);
+            this.dteEnd.Location = new System.Drawing.Point(24, 114);
             this.dteEnd.MaxDate = new System.DateTime(2025, 12, 31, 0, 0, 0, 0);
             this.dteEnd.MinDate = new System.DateTime(2023, 1, 1, 0, 0, 0, 0);
             this.dteEnd.Name = "dteEnd";
@@ -176,7 +183,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 37);
+            this.label2.Location = new System.Drawing.Point(27, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 3;
@@ -186,7 +193,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 100);
+            this.label3.Location = new System.Drawing.Point(27, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 3;
@@ -201,9 +208,9 @@
             this.groupBox2.Controls.Add(this.dteEnd);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(55, 215);
+            this.groupBox2.Location = new System.Drawing.Point(52, 257);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(347, 278);
+            this.groupBox2.Size = new System.Drawing.Size(347, 270);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Days Worked";
@@ -215,7 +222,7 @@
             this.chkNonWorkDays.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.chkNonWorkDays.FormattingEnabled = true;
             this.chkNonWorkDays.HorizontalScrollbar = true;
-            this.chkNonWorkDays.Location = new System.Drawing.Point(24, 191);
+            this.chkNonWorkDays.Location = new System.Drawing.Point(24, 186);
             this.chkNonWorkDays.MultiColumn = true;
             this.chkNonWorkDays.Name = "chkNonWorkDays";
             this.chkNonWorkDays.Size = new System.Drawing.Size(288, 60);
@@ -225,7 +232,7 @@
             // 
             this.lblExcludeDays.AutoSize = true;
             this.lblExcludeDays.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExcludeDays.Location = new System.Drawing.Point(27, 167);
+            this.lblExcludeDays.Location = new System.Drawing.Point(27, 162);
             this.lblExcludeDays.Name = "lblExcludeDays";
             this.lblExcludeDays.Size = new System.Drawing.Size(139, 17);
             this.lblExcludeDays.TabIndex = 3;
@@ -241,9 +248,9 @@
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(444, 93);
+            this.groupBox3.Location = new System.Drawing.Point(441, 139);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 318);
+            this.groupBox3.Size = new System.Drawing.Size(303, 388);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Payroll Summary";
@@ -306,7 +313,6 @@
             this.txtNetPay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNetPay.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtNetPay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNetPay.Enabled = false;
             this.txtNetPay.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNetPay.Location = new System.Drawing.Point(10, 6);
             this.txtNetPay.MaxLength = 50;
@@ -346,7 +352,6 @@
             this.txtDeduction.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDeduction.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtDeduction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDeduction.Enabled = false;
             this.txtDeduction.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeduction.Location = new System.Drawing.Point(10, 6);
             this.txtDeduction.MaxLength = 50;
@@ -386,7 +391,6 @@
             this.txtGrossPay.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGrossPay.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.txtGrossPay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGrossPay.Enabled = false;
             this.txtGrossPay.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrossPay.Location = new System.Drawing.Point(10, 6);
             this.txtGrossPay.MaxLength = 50;
@@ -403,16 +407,56 @@
             this.tipDaysExcluded.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.tipDaysExcluded.ToolTipTitle = "Excluding Dates";
             // 
+            // lblAccount
+            // 
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Location = new System.Drawing.Point(688, 40);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblAccount.Size = new System.Drawing.Size(54, 17);
+            this.lblAccount.TabIndex = 7;
+            this.lblAccount.Text = "Account";
+            this.lblAccount.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblFullName, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 54);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 60);
+            this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(562, 32);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(127, 25);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 570);
+            this.ClientSize = new System.Drawing.Size(794, 599);
+            this.Controls.Add(this.lblMessage);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.btnCompute);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblMessage);
-            this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -435,6 +479,8 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,5 +516,8 @@
         private System.Windows.Forms.CheckedListBox chkNonWorkDays;
         private System.Windows.Forms.Label lblExcludeDays;
         private System.Windows.Forms.ToolTip tipDaysExcluded;
+        private System.Windows.Forms.Label lblAccount;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

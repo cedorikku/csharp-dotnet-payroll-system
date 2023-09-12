@@ -27,7 +27,7 @@ namespace payroll_system
         private void Form2_Load(object sender, EventArgs e)
         {
             // Welcome message
-            LoadWelcomeMessage();
+            LoadLabels();
             LoadListItems();
             LoadDefaultValues();
         }
@@ -102,9 +102,9 @@ namespace payroll_system
             }
         }
 
-        private void LoadWelcomeMessage()
+        private void LoadLabels()
         {
-            lblMessage.Text = "Welcome,";
+            lblMessage.Text = "Laging Lugi";
             lblFullName.Text = firstname + " " + lastname;
         }
 
