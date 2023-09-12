@@ -59,7 +59,6 @@
             this.tipDaysExcluded = new System.Windows.Forms.ToolTip(this.components);
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -119,11 +118,11 @@
             // 
             this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(562, 4);
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lblFullName.Location = new System.Drawing.Point(547, 4);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblFullName.Size = new System.Drawing.Size(127, 21);
+            this.lblFullName.Size = new System.Drawing.Size(142, 25);
             this.lblFullName.TabIndex = 4;
             this.lblFullName.Text = "Full name here ";
             this.lblFullName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -133,7 +132,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(52, 139);
+            this.groupBox1.Location = new System.Drawing.Point(53, 114);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 101);
             this.groupBox1.TabIndex = 5;
@@ -146,7 +145,7 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.White;
-            this.btnCompute.Location = new System.Drawing.Point(52, 546);
+            this.btnCompute.Location = new System.Drawing.Point(52, 524);
             this.btnCompute.Name = "btnCompute";
             this.btnCompute.Size = new System.Drawing.Size(692, 43);
             this.btnCompute.TabIndex = 6;
@@ -208,7 +207,7 @@
             this.groupBox2.Controls.Add(this.dteEnd);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(52, 257);
+            this.groupBox2.Location = new System.Drawing.Point(53, 232);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(347, 270);
             this.groupBox2.TabIndex = 5;
@@ -248,7 +247,7 @@
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(441, 139);
+            this.groupBox3.Location = new System.Drawing.Point(442, 114);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(303, 388);
             this.groupBox3.TabIndex = 5;
@@ -410,7 +409,7 @@
             // lblAccount
             // 
             this.lblAccount.AutoSize = true;
-            this.lblAccount.Location = new System.Drawing.Point(688, 40);
+            this.lblAccount.Location = new System.Drawing.Point(688, 41);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblAccount.Size = new System.Drawing.Size(54, 17);
@@ -422,35 +421,19 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnLogout, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblFullName, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 54);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 55);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 60);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 34);
             this.tableLayoutPanel1.TabIndex = 8;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.Red;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(562, 32);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(127, 25);
-            this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 599);
+            this.ClientSize = new System.Drawing.Size(794, 582);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.lblAccount);
@@ -518,6 +501,5 @@
         private System.Windows.Forms.ToolTip tipDaysExcluded;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnLogout;
     }
 }

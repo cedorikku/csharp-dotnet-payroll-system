@@ -62,7 +62,7 @@ namespace payroll_system
 
             OutputPayroll();
         }
-
+       
         private void OutputPayroll()
         {
             DataAccess _dataAccess = new DataAccess();
