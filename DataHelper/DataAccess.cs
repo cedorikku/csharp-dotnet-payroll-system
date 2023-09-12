@@ -19,31 +19,56 @@ namespace DataHelper
         public double Deduction { get => deduction; set => deduction = value; }
         public double NetPay { get => netPay; set => netPay = value; }
 
-        private void employeePermanent(int days)
+        private void employeePermanent(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
+            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 850;
             double sss = 500;
             double medicare = 350;
             double taxRate = 0.25;
 
+            grossPay = computeGrossPay(days, ratePerDay);
+            tax = computeTax(taxRate);
+            deduction = computeDeduction(sss, medicare);
+            netPay = computeNetPay();
+
+            computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        private void employeeProbationary(int days)
+        private void employeeProbationary(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
+            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 550;
             double sss = 400;
             double medicare = 250;
             double taxRate = 0.15;
 
+            grossPay = computeGrossPay(days, ratePerDay);
+            tax = computeTax(taxRate);
+            deduction = computeDeduction(sss, medicare);
+            netPay = computeNetPay();
+
+            computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        private void employeeContractual(int days)
+        private void employeeContractual(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
+            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 350;
             double sss = 100;
             double medicare = 100;
             double taxRate = 0.1;
 
+            computeAll(days, ratePerDay, sss, medicare, taxRate);
+        }
+
+        // executes everything with the right values
+        private void computeAll(int days, double ratePerDay, double sss, double medicare, double taxRate)
+        {
+            grossPay = computeGrossPay(days, ratePerDay);
+            tax = computeTax(taxRate);
+            deduction = computeDeduction(sss, medicare);
+            netPay = computeNetPay();
         }
 
         private double computeGrossPay(int days, double rate)
@@ -78,6 +103,5 @@ namespace DataHelper
             }
             return daysWorked;
         }
-
     }
 }
