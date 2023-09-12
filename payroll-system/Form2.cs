@@ -45,26 +45,20 @@ namespace payroll_system
                 cmbEmployeeStatus.Focus();
                 return;
             }
+
+            int _min = 4;
             if (chkNonWorkDays.CheckedItems.Count == 6)
             {
                 MessageBox.Show("Must not have all work days excluded. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chkNonWorkDays.Focus();
                 return;
             }
-            else if (chkNonWorkDays.CheckedItems.Count > 3)
+            else if (chkNonWorkDays.CheckedItems.Count > _min)
             {
-                MessageBox.Show("Minimum of 3 work days required. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Minimum of "+ _min +" work days per week required. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chkNonWorkDays.Focus();
                 return;
             }
-
-            // int _difference = (dteEnd.Value - dteStart.Value).Days;
-            // int _daysPerWeek = 6; // Sunday is excluded
-            // foreach (var items in chkNonWorkDays.CheckedItems)
-            // {
-            //     _daysPerWeek--;
-            // }
-            /* COMMENTED FOR BACKUP PURPOSES */
 
             OutputPayroll();
         }
@@ -99,12 +93,12 @@ namespace payroll_system
             if (DateTime.Compare(dteStart.Value, dteEnd.Value) >= 0)
             {
                 dteEnd.Value = dteStart.Value;
-                dteEnd.MinDate = dteStart.Value.AddDays(1);
+                dteEnd.MinDate = dteStart.Value.AddDays(7);
             }
             // checks to less than 0 if date1 is earlier than date2
             else if (DateTime.Compare(dteStart.Value, dteEnd.Value) < 0)
             {
-                dteEnd.MinDate = dteStart.Value.AddDays(1);
+                dteEnd.MinDate = dteStart.Value.AddDays(7);
             }
         }
 
@@ -133,8 +127,8 @@ namespace payroll_system
         {
             // for the days worked controls
             dteStart.Value = DateTime.Now;
-            dteEnd.Value = dteStart.Value.AddDays(1);
-            dteEnd.MinDate = dteStart.Value.AddDays(1);
+            dteEnd.Value = dteStart.Value.AddDays(7);
+            dteEnd.MinDate = dteStart.Value.AddDays(7);
 
             var _nonworkdays = new ArrayList()
             {
