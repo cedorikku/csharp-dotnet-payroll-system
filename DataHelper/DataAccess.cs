@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DataHelper
 {
@@ -64,5 +65,19 @@ namespace DataHelper
         {
             return grossPay - deduction;
         }
+
+        private int getDaysWorked(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        {
+            int daysWorked = 0;
+            for (DateTime dtStart = startDate.Value; dtStart <= endDate.Value; dtStart = dtStart.AddDays(1))
+            {
+                if (dtStart.DayOfWeek != DayOfWeek.Sunday && !nonWorkDays.CheckedItems.Contains(dtStart.DayOfWeek.ToString()))
+                {
+                    daysWorked++;
+                }
+            }
+            return daysWorked;
+        }
+
     }
 }

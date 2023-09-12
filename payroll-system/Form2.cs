@@ -126,18 +126,5 @@ namespace payroll_system
             txtDeduction.Text = "0.00";
             txtNetPay.Text = "0.00";
         }
-
-        private int GetDaysWorked(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
-        {
-            int daysWorked = 0;
-            for (DateTime dtStart = startDate.Value; dtStart <= endDate.Value; dtStart = dtStart.AddDays(1))
-            {
-                if (dtStart.DayOfWeek != DayOfWeek.Sunday && !nonWorkDays.CheckedItems.Contains(dtStart.DayOfWeek.ToString()))
-                {
-                    daysWorked++;
-                }
-            }
-            return daysWorked;
-        }
     }
 }
