@@ -19,9 +19,8 @@ namespace DataHelper
         public double Deduction { get => deduction; set => deduction = value; }
         public double NetPay { get => netPay; set => netPay = value; }
 
-        public void employeePermanent(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeePermanent(int days, CheckedListBox nonWorkDays)
         {
-            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 850;
             double sss = 500;
             double medicare = 350;
@@ -35,9 +34,8 @@ namespace DataHelper
             computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        public void employeeProbationary(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeeProbationary(int days, CheckedListBox nonWorkDays)
         {
-            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 550;
             double sss = 400;
             double medicare = 250;
@@ -51,9 +49,8 @@ namespace DataHelper
             computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        public void employeeContractual(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeeContractual(int days, CheckedListBox nonWorkDays)
         {
-            int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 350;
             double sss = 100;
             double medicare = 100;
@@ -91,7 +88,7 @@ namespace DataHelper
             return grossPay - deduction;
         }
 
-        private int getDaysWorked(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public int getDaysWorked(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
             int daysWorked = 0;
             for (DateTime dtStart = startDate.Value; dtStart <= endDate.Value; dtStart = dtStart.AddDays(1))

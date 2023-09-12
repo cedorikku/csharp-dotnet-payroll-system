@@ -67,15 +67,17 @@ namespace payroll_system
         {
             DataAccess _dataAccess = new DataAccess();
 
-            string _employeeStatus = cmbEmployeeStatus.SelectedItem.ToString(); 
+            string _employeeStatus = cmbEmployeeStatus.SelectedItem.ToString();
+            int daysWorked = _dataAccess.getDaysWorked(dteStart, dteEnd, chkNonWorkDays);
+
             switch (_employeeStatus)
             {
                 case "Permanent": 
-                    _dataAccess.employeePermanent(dteStart, dteEnd, chkNonWorkDays); break;
+                    _dataAccess.employeePermanent(daysWorked, chkNonWorkDays); break;
                 case "Probationary": 
-                    _dataAccess.employeeProbationary(dteStart, dteEnd, chkNonWorkDays); break;
+                    _dataAccess.employeeProbationary(daysWorked, chkNonWorkDays); break;
                 case "Contractual": 
-                    _dataAccess.employeeContractual(dteStart, dteEnd, chkNonWorkDays); break;
+                    _dataAccess.employeeContractual(daysWorked, chkNonWorkDays); break;
                 default: 
                     return;
             }
