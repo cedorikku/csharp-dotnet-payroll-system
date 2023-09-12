@@ -91,7 +91,7 @@ namespace payroll_system
             {
                 if (!chkNonWorkDays.CheckedItems.Contains(days))
                 {
-                    boxDaysOfWork.AppendText("\n" + days.ToString());
+                    boxDaysOfWork.AppendText(days.ToString() + "\n");
                 }
             }
         }
