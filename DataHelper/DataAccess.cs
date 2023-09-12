@@ -19,7 +19,7 @@ namespace DataHelper
         public double Deduction { get => deduction; set => deduction = value; }
         public double NetPay { get => netPay; set => netPay = value; }
 
-        private void employeePermanent(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeePermanent(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
             int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 850;
@@ -35,7 +35,7 @@ namespace DataHelper
             computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        private void employeeProbationary(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeeProbationary(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
             int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 550;
@@ -51,7 +51,7 @@ namespace DataHelper
             computeAll(days, ratePerDay, sss, medicare, taxRate);
         }
 
-        private void employeeContractual(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        public void employeeContractual(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
         {
             int days = getDaysWorked(startDate, endDate, nonWorkDays);
             double ratePerDay = 350;

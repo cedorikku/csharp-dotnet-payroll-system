@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using DataHelper;
 
 namespace payroll_system
@@ -64,6 +65,30 @@ namespace payroll_system
             //     _daysPerWeek--;
             // }
             /* COMMENTED FOR BACKUP PURPOSES */
+
+            OutputPayroll();
+        }
+
+        private void OutputPayroll()
+        {
+            DataAccess _dataAccess = new DataAccess();
+
+            string _employeeStatus = cmbEmployeeStatus.SelectedItem.ToString(); 
+            switch (_employeeStatus)
+            {
+                case "Permanent": 
+                    _dataAccess.employeePermanent(dteStart, dteEnd, chkNonWorkDays); break;
+                case "Probationary": 
+                    _dataAccess.employeeProbationary(dteStart, dteEnd, chkNonWorkDays); break;
+                case "Contractual": 
+                    _dataAccess.employeeContractual(dteStart, dteEnd, chkNonWorkDays); break;
+                default: 
+                    return;
+            }
+
+            txtGrossPay.Text = _dataAccess.GrossPay.ToString("#,###.00");
+            txtDeduction.Text = _dataAccess.Deduction.ToString("#,###.00");
+            txtNetPay.Text = _dataAccess.NetPay.ToString("#,###.00");
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
