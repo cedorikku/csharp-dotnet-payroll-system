@@ -64,6 +64,7 @@
             this.txtWorkDays = new System.Windows.Forms.TextBox();
             this.boxDaysOfWork = new System.Windows.Forms.RichTextBox();
             this.lblDaysOfWork = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -249,6 +250,7 @@
             this.groupBox3.Controls.Add(this.boxDaysOfWork);
             this.groupBox3.Controls.Add(this.lblDaysOfWork);
             this.groupBox3.Controls.Add(this.lblDaysWorked);
+            this.groupBox3.Controls.Add(this.btnReset);
             this.groupBox3.Controls.Add(this.lblNetPay);
             this.groupBox3.Controls.Add(this.lblDeduction);
             this.groupBox3.Controls.Add(this.lblGrossPay);
@@ -457,7 +459,7 @@
             this.panel5.Location = new System.Drawing.Point(171, 285);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
-            this.panel5.Size = new System.Drawing.Size(122, 43);
+            this.panel5.Size = new System.Drawing.Size(125, 43);
             this.panel5.TabIndex = 2;
             // 
             // txtWorkDays
@@ -471,7 +473,7 @@
             this.txtWorkDays.MaxLength = 50;
             this.txtWorkDays.Name = "txtWorkDays";
             this.txtWorkDays.ReadOnly = true;
-            this.txtWorkDays.Size = new System.Drawing.Size(98, 26);
+            this.txtWorkDays.Size = new System.Drawing.Size(101, 26);
             this.txtWorkDays.TabIndex = 4;
             this.txtWorkDays.TabStop = false;
             this.txtWorkDays.Text = "0";
@@ -497,6 +499,21 @@
             this.lblDaysOfWork.Size = new System.Drawing.Size(90, 17);
             this.lblDaysOfWork.TabIndex = 3;
             this.lblDaysOfWork.Text = "Days of Work";
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(171, 384);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(125, 43);
+            this.btnReset.TabIndex = 6;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Visible = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Form2
             // 
@@ -577,5 +594,6 @@
         private System.Windows.Forms.TextBox txtWorkDays;
         private System.Windows.Forms.RichTextBox boxDaysOfWork;
         private System.Windows.Forms.Label lblDaysOfWork;
+        private System.Windows.Forms.Button btnReset;
     }
 }

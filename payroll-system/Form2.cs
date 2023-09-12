@@ -60,8 +60,33 @@ namespace payroll_system
                 return;
             }
 
+            // disable user controls
+            groupBox1.Enabled = false;
+            groupBox2.Enabled = false;
+            btnCompute.Enabled = false;
+
+            btnReset.Visible = true;
+
             OutputPayroll();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            // reenable user controls
+            groupBox1.Enabled = true;
+            groupBox2.Enabled = true;
+            btnCompute.Enabled = true;
+
+            // reset payroll summary
+            txtGrossPay.Text = "0.00";
+            txtDeduction.Text = "0.00";
+            txtNetPay.Text = "0.00";
+            boxDaysOfWork.Text = "";
+            txtWorkDays.Text = "0";
+
+            btnReset.Visible = false;
+        }
+
        
         private void OutputPayroll()
         {
@@ -94,11 +119,6 @@ namespace payroll_system
                     boxDaysOfWork.AppendText(days.ToString() + "\n");
                 }
             }
-
-            // disable user controls
-            groupBox1.Enabled = false;
-            groupBox2.Enabled = false;
-            btnCompute.Enabled = false;
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
@@ -138,7 +158,6 @@ namespace payroll_system
             }
         }
 
-       
         private void LoadDefaultValues()
         {
             // for the days worked controls
@@ -146,6 +165,7 @@ namespace payroll_system
             dteEnd.Value = dteStart.Value.AddDays(7);
             dteEnd.MinDate = dteStart.Value.AddDays(7);
 
+            // for the checkboxlist control
             var _nonworkdays = new ArrayList()
             {
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -155,11 +175,16 @@ namespace payroll_system
             {
                 chkNonWorkDays.Items.Add(days);
             }
-
+            
             // for the payroll summary
             txtGrossPay.Text = "0.00";
             txtDeduction.Text = "0.00";
             txtNetPay.Text = "0.00";
+
+
+            // for the work days output
+            boxDaysOfWork.Text = "";
+            txtWorkDays.Text = "0";
         }
     }
 }
