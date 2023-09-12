@@ -53,7 +53,7 @@ namespace payroll_system
                 chkNonWorkDays.Focus();
                 return;
             }
-            else if (chkNonWorkDays.CheckedItems.Count > _min)
+            else if (chkNonWorkDays.CheckedItems.Count > 6 - _min)
             {
                 MessageBox.Show("Minimum of "+ _min +" work days per week required. Please uncheck some boxes", "Payroll System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chkNonWorkDays.Focus();
