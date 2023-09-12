@@ -59,8 +59,11 @@
             this.tipDaysExcluded = new System.Windows.Forms.ToolTip(this.components);
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.boxOthers = new System.Windows.Forms.RichTextBox();
-            this.lblOthers = new System.Windows.Forms.Label();
+            this.lblDaysWorked = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtWorkDays = new System.Windows.Forms.TextBox();
+            this.boxDaysOfWork = new System.Windows.Forms.RichTextBox();
+            this.lblDaysOfWork = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,6 +72,7 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMessage
@@ -134,7 +138,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(53, 114);
+            this.groupBox1.Location = new System.Drawing.Point(44, 114);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(347, 101);
             this.groupBox1.TabIndex = 5;
@@ -147,9 +151,9 @@
             this.btnCompute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCompute.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompute.ForeColor = System.Drawing.Color.White;
-            this.btnCompute.Location = new System.Drawing.Point(52, 524);
+            this.btnCompute.Location = new System.Drawing.Point(43, 524);
             this.btnCompute.Name = "btnCompute";
-            this.btnCompute.Size = new System.Drawing.Size(692, 43);
+            this.btnCompute.Size = new System.Drawing.Size(348, 43);
             this.btnCompute.TabIndex = 6;
             this.btnCompute.Text = "Compute";
             this.btnCompute.UseVisualStyleBackColor = false;
@@ -209,7 +213,7 @@
             this.groupBox2.Controls.Add(this.dteEnd);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(53, 232);
+            this.groupBox2.Location = new System.Drawing.Point(44, 232);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(347, 270);
             this.groupBox2.TabIndex = 5;
@@ -242,18 +246,20 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.boxOthers);
-            this.groupBox3.Controls.Add(this.lblOthers);
+            this.groupBox3.Controls.Add(this.boxDaysOfWork);
+            this.groupBox3.Controls.Add(this.lblDaysOfWork);
+            this.groupBox3.Controls.Add(this.lblDaysWorked);
             this.groupBox3.Controls.Add(this.lblNetPay);
             this.groupBox3.Controls.Add(this.lblDeduction);
             this.groupBox3.Controls.Add(this.lblGrossPay);
+            this.groupBox3.Controls.Add(this.panel5);
             this.groupBox3.Controls.Add(this.panel4);
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(442, 114);
+            this.groupBox3.Location = new System.Drawing.Point(433, 114);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 388);
+            this.groupBox3.Size = new System.Drawing.Size(323, 453);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Payroll Summary";
@@ -297,7 +303,7 @@
             this.panel4.Location = new System.Drawing.Point(27, 202);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
-            this.panel4.Size = new System.Drawing.Size(247, 43);
+            this.panel4.Size = new System.Drawing.Size(269, 43);
             this.panel4.TabIndex = 2;
             // 
             // label4
@@ -322,7 +328,7 @@
             this.txtNetPay.Name = "txtNetPay";
             this.txtNetPay.ReadOnly = true;
             this.txtNetPay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtNetPay.Size = new System.Drawing.Size(223, 26);
+            this.txtNetPay.Size = new System.Drawing.Size(245, 26);
             this.txtNetPay.TabIndex = 4;
             this.txtNetPay.TabStop = false;
             this.txtNetPay.Text = "0.00";
@@ -336,7 +342,7 @@
             this.panel3.Location = new System.Drawing.Point(27, 123);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
-            this.panel3.Size = new System.Drawing.Size(247, 43);
+            this.panel3.Size = new System.Drawing.Size(269, 43);
             this.panel3.TabIndex = 2;
             // 
             // lblPeso2
@@ -361,7 +367,7 @@
             this.txtDeduction.Name = "txtDeduction";
             this.txtDeduction.ReadOnly = true;
             this.txtDeduction.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtDeduction.Size = new System.Drawing.Size(223, 26);
+            this.txtDeduction.Size = new System.Drawing.Size(245, 26);
             this.txtDeduction.TabIndex = 4;
             this.txtDeduction.TabStop = false;
             this.txtDeduction.Text = "0.00";
@@ -375,7 +381,7 @@
             this.panel2.Location = new System.Drawing.Point(27, 48);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
-            this.panel2.Size = new System.Drawing.Size(247, 43);
+            this.panel2.Size = new System.Drawing.Size(269, 43);
             this.panel2.TabIndex = 2;
             // 
             // lblPeso1
@@ -400,7 +406,7 @@
             this.txtGrossPay.Name = "txtGrossPay";
             this.txtGrossPay.ReadOnly = true;
             this.txtGrossPay.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtGrossPay.Size = new System.Drawing.Size(223, 26);
+            this.txtGrossPay.Size = new System.Drawing.Size(245, 26);
             this.txtGrossPay.TabIndex = 4;
             this.txtGrossPay.TabStop = false;
             this.txtGrossPay.Text = "0.00";
@@ -413,7 +419,7 @@
             // lblAccount
             // 
             this.lblAccount.AutoSize = true;
-            this.lblAccount.Location = new System.Drawing.Point(688, 41);
+            this.lblAccount.Location = new System.Drawing.Point(679, 41);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblAccount.Size = new System.Drawing.Size(54, 17);
@@ -426,33 +432,71 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.lblFullName, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(54, 55);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(45, 55);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 34);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
-            // boxOthers
+            // lblDaysWorked
             // 
-            this.boxOthers.BackColor = System.Drawing.Color.Gainsboro;
-            this.boxOthers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.boxOthers.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxOthers.Location = new System.Drawing.Point(27, 277);
-            this.boxOthers.Name = "boxOthers";
-            this.boxOthers.Size = new System.Drawing.Size(247, 87);
-            this.boxOthers.TabIndex = 9;
-            this.boxOthers.Text = "";
+            this.lblDaysWorked.AutoSize = true;
+            this.lblDaysWorked.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDaysWorked.Location = new System.Drawing.Point(173, 262);
+            this.lblDaysWorked.Name = "lblDaysWorked";
+            this.lblDaysWorked.Size = new System.Drawing.Size(111, 17);
+            this.lblDaysWorked.TabIndex = 3;
+            this.lblDaysWorked.Text = "No. of work days";
             // 
-            // lblOthers
+            // panel5
             // 
-            this.lblOthers.AutoSize = true;
-            this.lblOthers.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOthers.Location = new System.Drawing.Point(29, 257);
-            this.lblOthers.Name = "lblOthers";
-            this.lblOthers.Size = new System.Drawing.Size(87, 17);
-            this.lblOthers.TabIndex = 3;
-            this.lblOthers.Text = "Other Details";
+            this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.txtWorkDays);
+            this.panel5.Location = new System.Drawing.Point(171, 285);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
+            this.panel5.Size = new System.Drawing.Size(122, 43);
+            this.panel5.TabIndex = 2;
+            // 
+            // txtWorkDays
+            // 
+            this.txtWorkDays.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtWorkDays.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWorkDays.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtWorkDays.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtWorkDays.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWorkDays.Location = new System.Drawing.Point(10, 6);
+            this.txtWorkDays.MaxLength = 50;
+            this.txtWorkDays.Name = "txtWorkDays";
+            this.txtWorkDays.ReadOnly = true;
+            this.txtWorkDays.Size = new System.Drawing.Size(98, 26);
+            this.txtWorkDays.TabIndex = 4;
+            this.txtWorkDays.TabStop = false;
+            this.txtWorkDays.Text = "0";
+            // 
+            // boxDaysOfWork
+            // 
+            this.boxDaysOfWork.BackColor = System.Drawing.Color.Gainsboro;
+            this.boxDaysOfWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxDaysOfWork.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxDaysOfWork.Location = new System.Drawing.Point(27, 285);
+            this.boxDaysOfWork.Name = "boxDaysOfWork";
+            this.boxDaysOfWork.ReadOnly = true;
+            this.boxDaysOfWork.Size = new System.Drawing.Size(135, 142);
+            this.boxDaysOfWork.TabIndex = 4;
+            this.boxDaysOfWork.Text = "";
+            // 
+            // lblDaysOfWork
+            // 
+            this.lblDaysOfWork.AutoSize = true;
+            this.lblDaysOfWork.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDaysOfWork.Location = new System.Drawing.Point(29, 262);
+            this.lblDaysOfWork.Name = "lblDaysOfWork";
+            this.lblDaysOfWork.Size = new System.Drawing.Size(90, 17);
+            this.lblDaysOfWork.TabIndex = 3;
+            this.lblDaysOfWork.Text = "Days of Work";
             // 
             // Form2
             // 
@@ -489,6 +533,8 @@
             this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,7 +572,10 @@
         private System.Windows.Forms.ToolTip tipDaysExcluded;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.RichTextBox boxOthers;
-        private System.Windows.Forms.Label lblOthers;
+        private System.Windows.Forms.Label lblDaysWorked;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtWorkDays;
+        private System.Windows.Forms.RichTextBox boxDaysOfWork;
+        private System.Windows.Forms.Label lblDaysOfWork;
     }
 }

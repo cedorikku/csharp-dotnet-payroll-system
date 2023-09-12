@@ -85,6 +85,15 @@ namespace payroll_system
             txtGrossPay.Text = _dataAccess.GrossPay.ToString("#,###.00");
             txtDeduction.Text = _dataAccess.Deduction.ToString("#,###.00");
             txtNetPay.Text = _dataAccess.NetPay.ToString("#,###.00");
+
+            txtWorkDays.Text = daysWorked.ToString();
+            foreach (var days in chkNonWorkDays.Items) 
+            {
+                if (!chkNonWorkDays.CheckedItems.Contains(days))
+                {
+                    boxDaysOfWork.AppendText("\n" + days.ToString());
+                }
+            }
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
