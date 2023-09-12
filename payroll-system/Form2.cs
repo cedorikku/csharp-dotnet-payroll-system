@@ -46,7 +46,13 @@ namespace payroll_system
             }
             if (chkNonWorkDays.CheckedItems.Count == 6)
             {
-                MessageBox.Show("Must not have all days excluded");
+                MessageBox.Show("Must not have all work days excluded");
+                chkNonWorkDays.Focus();
+                return;
+            }
+            else if (chkNonWorkDays.CheckedItems.Count > 3)
+            {
+                MessageBox.Show("Minimum of 3 work days required");
                 chkNonWorkDays.Focus();
                 return;
             }
