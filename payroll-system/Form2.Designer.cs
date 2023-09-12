@@ -230,7 +230,7 @@
             this.lblExcludeDays.Size = new System.Drawing.Size(139, 17);
             this.lblExcludeDays.TabIndex = 3;
             this.lblExcludeDays.Text = "Workdays to exclude:";
-            this.tipDaysExcluded.SetToolTip(this.lblExcludeDays, "Sunday is already excluded");
+            this.tipDaysExcluded.SetToolTip(this.lblExcludeDays, "Sunday is excluded by default");
             // 
             // groupBox3
             // 
