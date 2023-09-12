@@ -59,6 +59,8 @@
             this.tipDaysExcluded = new System.Windows.Forms.ToolTip(this.components);
             this.lblAccount = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.boxOthers = new System.Windows.Forms.RichTextBox();
+            this.lblOthers = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -240,6 +242,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.boxOthers);
+            this.groupBox3.Controls.Add(this.lblOthers);
             this.groupBox3.Controls.Add(this.lblNetPay);
             this.groupBox3.Controls.Add(this.lblDeduction);
             this.groupBox3.Controls.Add(this.lblGrossPay);
@@ -258,7 +262,7 @@
             // 
             this.lblNetPay.AutoSize = true;
             this.lblNetPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNetPay.Location = new System.Drawing.Point(29, 211);
+            this.lblNetPay.Location = new System.Drawing.Point(29, 182);
             this.lblNetPay.Name = "lblNetPay";
             this.lblNetPay.Size = new System.Drawing.Size(56, 17);
             this.lblNetPay.TabIndex = 3;
@@ -268,7 +272,7 @@
             // 
             this.lblDeduction.AutoSize = true;
             this.lblDeduction.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeduction.Location = new System.Drawing.Point(29, 124);
+            this.lblDeduction.Location = new System.Drawing.Point(29, 103);
             this.lblDeduction.Name = "lblDeduction";
             this.lblDeduction.Size = new System.Drawing.Size(70, 17);
             this.lblDeduction.TabIndex = 3;
@@ -278,7 +282,7 @@
             // 
             this.lblGrossPay.AutoSize = true;
             this.lblGrossPay.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrossPay.Location = new System.Drawing.Point(29, 41);
+            this.lblGrossPay.Location = new System.Drawing.Point(29, 28);
             this.lblGrossPay.Name = "lblGrossPay";
             this.lblGrossPay.Size = new System.Drawing.Size(68, 17);
             this.lblGrossPay.TabIndex = 3;
@@ -290,7 +294,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.txtNetPay);
-            this.panel4.Location = new System.Drawing.Point(27, 231);
+            this.panel4.Location = new System.Drawing.Point(27, 202);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
             this.panel4.Size = new System.Drawing.Size(247, 43);
@@ -329,7 +333,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.lblPeso2);
             this.panel3.Controls.Add(this.txtDeduction);
-            this.panel3.Location = new System.Drawing.Point(27, 144);
+            this.panel3.Location = new System.Drawing.Point(27, 123);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
             this.panel3.Size = new System.Drawing.Size(247, 43);
@@ -368,7 +372,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lblPeso1);
             this.panel2.Controls.Add(this.txtGrossPay);
-            this.panel2.Location = new System.Drawing.Point(27, 61);
+            this.panel2.Location = new System.Drawing.Point(27, 48);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10, 6, 10, 5);
             this.panel2.Size = new System.Drawing.Size(247, 43);
@@ -428,6 +432,27 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 34);
             this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // boxOthers
+            // 
+            this.boxOthers.BackColor = System.Drawing.Color.Gainsboro;
+            this.boxOthers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxOthers.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxOthers.Location = new System.Drawing.Point(27, 277);
+            this.boxOthers.Name = "boxOthers";
+            this.boxOthers.Size = new System.Drawing.Size(247, 87);
+            this.boxOthers.TabIndex = 9;
+            this.boxOthers.Text = "";
+            // 
+            // lblOthers
+            // 
+            this.lblOthers.AutoSize = true;
+            this.lblOthers.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOthers.Location = new System.Drawing.Point(29, 257);
+            this.lblOthers.Name = "lblOthers";
+            this.lblOthers.Size = new System.Drawing.Size(87, 17);
+            this.lblOthers.TabIndex = 3;
+            this.lblOthers.Text = "Other Details";
             // 
             // Form2
             // 
@@ -501,5 +526,7 @@
         private System.Windows.Forms.ToolTip tipDaysExcluded;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.RichTextBox boxOthers;
+        private System.Windows.Forms.Label lblOthers;
     }
 }
