@@ -44,19 +44,20 @@ namespace payroll_system
                 cmbEmployeeStatus.Focus();
                 return;
             }
-            if (chkWeekdays.CheckedItems.Count == 6)
+            if (chkNonWorkDays.CheckedItems.Count == 6)
             {
                 MessageBox.Show("Must not have all days excluded");
-                chkWeekdays.Focus();
+                chkNonWorkDays.Focus();
                 return;
             }
 
-            int _difference = (dteEnd.Value - dteStart.Value).Days;
-            int _daysPerWeek = 6; // Sunday is excluded
-            foreach (var items in chkWeekdays.CheckedItems)
-            {
-                _daysPerWeek--;
-            }
+            // int _difference = (dteEnd.Value - dteStart.Value).Days;
+            // int _daysPerWeek = 6; // Sunday is excluded
+            // foreach (var items in chkNonWorkDays.CheckedItems)
+            // {
+            //     _daysPerWeek--;
+            // }
+            /* COMMENTED FOR BACKUP PURPOSES */
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
@@ -104,14 +105,14 @@ namespace payroll_system
             dteEnd.Value = dteStart.Value.AddDays(1);
             dteEnd.MinDate = dteStart.Value.AddDays(1);
 
-            var _weekdays = new ArrayList()
+            var _nonworkdays = new ArrayList()
             {
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
             };
 
-            foreach(var weekday in _weekdays)
+            foreach(var days in _nonworkdays)
             {
-                chkWeekdays.Items.Add(weekday);
+                chkNonWorkDays.Items.Add(days);
             }
 
             // for the payroll summary
@@ -120,5 +121,17 @@ namespace payroll_system
             txtNetPay.Text = "0.00";
         }
 
+        private int GetDaysWorked(DateTimePicker startDate, DateTimePicker endDate, CheckedListBox nonWorkDays)
+        {
+            int daysWorked = 0;
+            for (DateTime dtStart = startDate.Value; dtStart <= endDate.Value; dtStart = dtStart.AddDays(1))
+            {
+                if (dtStart.DayOfWeek != DayOfWeek.Sunday && !nonWorkDays.CheckedItems.Contains(dtStart.DayOfWeek.ToString()))
+                {
+                    daysWorked++;
+                }
+            }
+            return daysWorked;
+        }
     }
 }

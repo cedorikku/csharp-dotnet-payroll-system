@@ -41,7 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chkWeekdays = new System.Windows.Forms.CheckedListBox();
+            this.chkNonWorkDays = new System.Windows.Forms.CheckedListBox();
             this.lblExcludeDays = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblNetPay = new System.Windows.Forms.Label();
@@ -194,7 +194,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.chkWeekdays);
+            this.groupBox2.Controls.Add(this.chkNonWorkDays);
             this.groupBox2.Controls.Add(this.lblExcludeDays);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.dteStart);
@@ -208,17 +208,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Days Worked";
             // 
-            // chkWeekdays
+            // chkNonWorkDays
             // 
-            this.chkWeekdays.BackColor = System.Drawing.SystemColors.Control;
-            this.chkWeekdays.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chkWeekdays.FormattingEnabled = true;
-            this.chkWeekdays.HorizontalScrollbar = true;
-            this.chkWeekdays.Location = new System.Drawing.Point(24, 191);
-            this.chkWeekdays.MultiColumn = true;
-            this.chkWeekdays.Name = "chkWeekdays";
-            this.chkWeekdays.Size = new System.Drawing.Size(288, 60);
-            this.chkWeekdays.TabIndex = 7;
+            this.chkNonWorkDays.BackColor = System.Drawing.SystemColors.Control;
+            this.chkNonWorkDays.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chkNonWorkDays.FormattingEnabled = true;
+            this.chkNonWorkDays.HorizontalScrollbar = true;
+            this.chkNonWorkDays.Location = new System.Drawing.Point(24, 191);
+            this.chkNonWorkDays.MultiColumn = true;
+            this.chkNonWorkDays.Name = "chkNonWorkDays";
+            this.chkNonWorkDays.Size = new System.Drawing.Size(288, 60);
+            this.chkNonWorkDays.TabIndex = 7;
             // 
             // lblExcludeDays
             // 
@@ -466,7 +466,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNetPay;
-        private System.Windows.Forms.CheckedListBox chkWeekdays;
+        private System.Windows.Forms.CheckedListBox chkNonWorkDays;
         private System.Windows.Forms.Label lblExcludeDays;
         private System.Windows.Forms.ToolTip tipDaysExcluded;
     }
