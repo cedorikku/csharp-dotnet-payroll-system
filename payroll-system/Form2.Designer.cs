@@ -125,7 +125,7 @@
             this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblFullName.AutoSize = true;
             this.lblFullName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.lblFullName.Location = new System.Drawing.Point(547, 4);
+            this.lblFullName.Location = new System.Drawing.Point(569, 4);
             this.lblFullName.Name = "lblFullName";
             this.lblFullName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblFullName.Size = new System.Drawing.Size(142, 25);
@@ -257,7 +257,7 @@
             this.groupBox3.Controls.Add(this.panel3);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(433, 114);
+            this.groupBox3.Location = new System.Drawing.Point(429, 114);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(323, 453);
             this.groupBox3.TabIndex = 5;
@@ -419,7 +419,7 @@
             // lblAccount
             // 
             this.lblAccount.AutoSize = true;
-            this.lblAccount.Location = new System.Drawing.Point(679, 41);
+            this.lblAccount.Location = new System.Drawing.Point(700, 41);
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblAccount.Size = new System.Drawing.Size(54, 17);
@@ -432,11 +432,11 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.lblFullName, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(45, 55);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(44, 55);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(692, 34);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(714, 34);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // lblDaysWorked
