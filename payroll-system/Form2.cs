@@ -94,6 +94,11 @@ namespace payroll_system
                     boxDaysOfWork.AppendText(days.ToString() + "\n");
                 }
             }
+
+            // disable user controls
+            groupBox1.Enabled = false;
+            groupBox2.Enabled = false;
+            btnCompute.Enabled = false;
         }
 
         private void dteStart_ValueChanged(object sender, EventArgs e)
@@ -112,7 +117,6 @@ namespace payroll_system
                 dteEnd.MinDate = dteStart.Value.AddDays(7);
             }
         }
-
         private void LoadLabels()
         {
             lblMessage.Text = "Laging Lugi";
@@ -134,6 +138,7 @@ namespace payroll_system
             }
         }
 
+       
         private void LoadDefaultValues()
         {
             // for the days worked controls
